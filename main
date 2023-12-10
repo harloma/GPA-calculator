@@ -71,7 +71,7 @@ class CourseGrader {
         return weightedGradePoints / totalCreditUnits;
     }
 
-    // Display results in a tabular form
+    //  Tabular result
     public void displayResults() {
         System.out.println("\n------------------------------------------------------------------");
         System.out.printf("| %-30s | %-13s | %-6s | %-12s |\n", "Course Name & Code", "Course Unit", "Grade", "Grade Unit");
@@ -86,7 +86,7 @@ class CourseGrader {
         System.out.println("------------------------------------------------------------------");
     }
 
-    // Helper method to assign letter and number grade based on score
+
     private void assignGrades(int score, int index) {
         if (score >= 70 && score <= 100) {
             letterGrades[index] = 'A';
